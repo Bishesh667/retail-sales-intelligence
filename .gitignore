@@ -1,0 +1,23 @@
+@'
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+
+# Private datasets and generated reports
+data/raw/*
+data/processed/*
+reports/*
+
+# Temporary files
+*.bak
+*.tmp
+'@ | Set-Content .gitignore
